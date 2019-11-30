@@ -1,0 +1,63 @@
+@import './variables';
+@import './menu';
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/bg-crypto@3x.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% 0;
+}
+
+.container {
+  display: flex;
+  width: 1156px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  padding: 4px;
+  width: 193px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.btn {
+  width: 240px;
+  height: 42px;
+  box-sizing: border-box;
+  background-color: $first-color;
+  border: 2px solid $first-color;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: $first-color;
+  }
+
+  &--sm {
+    width: 162px;
+    height: 37px;
+    font-size: 14px;
+    font-family: $first-font;
+  }
+}
+
+.header {
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  
+}

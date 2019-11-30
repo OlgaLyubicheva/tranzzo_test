@@ -1,0 +1,79 @@
+.menu {
+  display: flex;
+  align-items: center;
+  height: 73px;
+  font-size: 14px;
+}
+.menu__nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 555px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu__nav a {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+.menu__btn {
+  margin: 0 3px 0 56px;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: url(/img/bg-crypto@3x.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% 0;
+}
+
+.container {
+  display: flex;
+  width: 1156px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  padding: 4px;
+  width: 193px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.btn {
+  width: 240px;
+  height: 42px;
+  box-sizing: border-box;
+  background-color: #331139;
+  border: 2px solid #331139;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #331139;
+}
+.btn--sm {
+  width: 162px;
+  height: 37px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  align-items: center;
+  height: 73px;
+  font-size: 14px;
+
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 555px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    a {
+      font-family: $first-font;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    margin: 0 3px 0 56px;
+  }
+}
