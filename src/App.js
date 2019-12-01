@@ -24,7 +24,7 @@ const App = () => {
               из перечня доступых, и мы обменяем ее по самому
               выгодному курсу.
             </p>
-            <img src="" alt="trustpilot"/>
+            <img src="./img/trustpilot@3x.jpg" alt="trustpilot" className="trustpilot"/>
           </div>
 
           <div className="main__form">

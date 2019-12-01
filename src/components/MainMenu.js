@@ -2,24 +2,22 @@ import React from 'react';
 
 const menuList = ['Обменять', 'Резервы', 'Как мы работаем', 'FAQ', 'Документы'];
 
-const MainMenu = ({ children }) => {
-  return (
-    <div className="menu">
-      <nav className="menu__nav">
-        <ul>
-          {
-            menuList.map(item => (
-              <li>
-                <a href="#">{item}</a>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
+const MainMenu = ({ children }) => (
+  <div className="menu">
+    <nav className="menu__nav">
+      <ul>
+        {
+          menuList.map(item => (
+            <li>
+              <a href="#">{item}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
 
-      {children}
-    </div>
-  );
-}
+    {children}
+  </div>
+);
 
 export default MainMenu;

@@ -1,13 +1,21 @@
 @import './variables';
 @import './menu';
+@import './main';
+@import './conversionform';
 
 body {
   margin: 0;
+  font-family: $first-font;
+}
+
+*:focus {
+  outline: none;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background: url(/img/bg-crypto@3x.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -56,8 +64,4 @@ body {
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
-}
-
-.main {
-  
 }

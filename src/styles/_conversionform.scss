@@ -1,0 +1,152 @@
+$box-color: #efefef;
+
+// text colors
+$first-font-color: #212121;
+$second-font-color: #a3a3a3;
+
+.box {
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid $box-color;
+  border-radius: 3px;
+}
+
+.icon {
+  display: inline-flex;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+
+  &--sm {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
+}
+
+.convert {
+  width: 444px;
+  height: 495px;
+  box-sizing: border-box;
+  padding: 40px 23px 28px 21px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-size: 14px;
+  color: $first-font-color;
+
+  h2 {
+    font-family: $second-font;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  &__buttons-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 33px 0;
+  }
+
+  &__pair {
+    height: 42px;
+    width: 126px;
+    cursor: pointer;
+  }
+
+  &__input {
+    position: relative;
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    padding: 11px 11px 8px;
+
+    label {
+      display: inline-flex;
+      flex-flow: column;
+      color: $second-font-color;
+      line-height: 19px;
+    }
+
+    .input {
+      height: 28px;
+      width: 130px;
+      margin-top: 6px;
+      border: none;
+      font-family: inherit;
+      font-size: 21px;
+      color: $first-font-color;
+    }
+  }
+
+  &__commis {
+    font-size: 12px;
+    line-height: 16px;
+    color: $second-font-color;
+    padding: 8px 11px 28px;
+    margin: 0;
+
+    span {
+      color: $first-font-color;
+      font-family: $second-font;
+      font-weight: 500;
+    }
+  }
+
+  &__agrees {
+    display: block;
+    padding: 15px 0 26px;
+  }
+
+  .select {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    span {
+      margin-left: 9px;
+    }
+
+    &__list {
+      position: absolute;
+      display: none;
+      top: 70px;
+      left: -1px;
+      height: 169px;
+      width: 400px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0 12px 0 13px;
+      list-style: none;
+      background-color: #fff;
+      border: 1px solid #f2f2f2;
+      z-index: 2;
+      overflow-x: hidden;
+    }
+
+    &__list:hover {
+      display: block;
+    }
+
+    &__list li {
+      display: flex;
+      align-items: center;
+      height: 55px;
+      border-bottom: 1px solid #f2f2f2;
+    }
+  }
+
+  &__btn {
+    margin-left: calc(100% - 240px);
+  }
+}
+
+div.select:focus+ul.select__list {
+  display: block;
+}
+
+.arrow {
+  @extend .icon;
+  background: url(/img/icons/arrow-right.svg) no-repeat center;
+  margin: 0 3px;
+}

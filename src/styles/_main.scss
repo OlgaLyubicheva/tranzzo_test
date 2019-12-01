@@ -1,0 +1,29 @@
+.main {
+  padding: 82px 0;
+
+  &__content {
+    font-size: 20px;
+
+    h1 {
+      margin: 45px 0;
+      font-family: $second-font;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 55px;
+      width: 444px;
+      color: #341139;
+    }
+  }
+  
+  &__form {
+    padding: 0 51px;
+  }
+}
+
+.trustpilot {
+  width: 145px;
+  height: 71px;
+  object-fit: contain;
+}
