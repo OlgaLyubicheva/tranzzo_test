@@ -60,7 +60,6 @@ ConversionForm.InputBlock = ({ children, select, onSelect }) => (
       {select[2]}
       <span>&#9013;</span>
     </div>
-    {/* <input type="text" value={select[2]} readOnly className="select"/> */}
     <ul className="select__list">
       {
         Object.values(iconsList).map(item => (

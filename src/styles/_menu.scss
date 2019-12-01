@@ -1,4 +1,5 @@
 .menu {
+  position: relative;
   display: flex;
   align-items: center;
   height: 73px;
@@ -20,7 +21,40 @@
     }
   }
 
-  &__btn {
+  &__acc {
     margin: 0 3px 0 56px;
+  }
+
+  &__btn {
+    display: none;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  
+    &-line {
+      width: 28px;
+      height: 3px;
+      background-color: #000;
+      margin-bottom: 5px;
+      transition: 0.5s ease-out;
+    }
+  
+    &--close {
+      transform: rotate(180deg);
+    }
+  
+    &--close>&-line {    
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px,5px);
+      }
+  
+      &:nth-child(2) {
+        opacity: 0;
+      }
+  
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px,-6px);;
+      }
+    }
   }
 }

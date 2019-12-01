@@ -13,10 +13,8 @@ body {
 }
 
 #root {
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
-  background: url(/img/bg-crypto@3x.jpg) no-repeat;
+  background: url(./img/bg-crypto@3x.jpg) no-repeat; // ./
   background-attachment: fixed;
   background-size: cover;
   background-position: 100% 0;
@@ -24,8 +22,12 @@ body {
 
 .container {
   display: flex;
-  width: 1156px;
+  flex-wrap: wrap;
+  min-width: 600px;
+  max-width: 1156px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo {
@@ -65,3 +67,5 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
+@import './media';

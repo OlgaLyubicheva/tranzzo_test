@@ -1,4 +1,5 @@
 .menu {
+  position: relative;
   display: flex;
   align-items: center;
   height: 73px;
@@ -16,15 +17,42 @@
   color: #000;
   text-decoration: none;
 }
-.menu__btn {
+.menu__acc {
   margin: 0 3px 0 56px;
+}
+.menu__btn {
+  display: none;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.menu__btn-line {
+  width: 28px;
+  height: 3px;
+  background-color: #000;
+  margin-bottom: 5px;
+  transition: 0.5s ease-out;
+}
+.menu__btn--close {
+  transform: rotate(180deg);
+}
+.menu__btn--close > .menu__btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu__btn--close > .menu__btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu__btn--close > .menu__btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .main {
   padding: 82px 0;
 }
 .main__content {
+  max-width: 545px;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 .main__content h1 {
   margin: 45px 0;
@@ -172,7 +200,7 @@ div.select:focus + ul.select__list {
 }
 
 .arrow {
-  background: url(/img/icons/arrow-right.svg) no-repeat center;
+  background: url(./img/icons/arrow-right.svg) no-repeat center;
   margin: 0 3px;
 }
 
@@ -186,10 +214,8 @@ body {
 }
 
 #root {
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
-  background: url(/img/bg-crypto@3x.jpg) no-repeat;
+  background: url(./img/bg-crypto@3x.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: 100% 0;
@@ -197,8 +223,12 @@ body {
 
 .container {
   display: flex;
-  width: 1156px;
+  flex-wrap: wrap;
+  min-width: 600px;
+  max-width: 1156px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo {
@@ -235,6 +265,25 @@ body {
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1199px) {
+  .menu__btn {
+    display: block;
+  }
+  .menu__nav {
+    position: absolute;
+    visibility: hidden;
+    top: 75px;
+    right: 0;
+  }
+  .menu__nav--show {
+    visibility: visible;
+  }
+
+  .main {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+@media (max-width: 1199px) {
+  .menu {
+    &__btn {
+      display: block;
+    }
+
+    &__nav {
+      position: absolute;
+      visibility: hidden;
+      top: 75px;
+      right: 0;
+
+      &--show {
+        visibility: visible;
+      }
+    }
+  }
+
+  .main {
+    justify-content: center;
+  }
+}

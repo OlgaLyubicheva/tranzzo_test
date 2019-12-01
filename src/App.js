@@ -11,7 +11,7 @@ const App = () => {
         <div className="container header">
           <a href="#" className="logo"><img src="./img/cryptoexch.svg" alt="крипто обмен"/></a>
           <MainMenu>
-            <button className="btn btn--sm menu__btn">Личный кабинет</button>
+            <button className="btn btn--sm menu__acc">Личный кабинет</button>
           </MainMenu>
         </div>
       </header>
@@ -33,7 +33,7 @@ const App = () => {
         </main>
       </div>
     </>
-  )
+  );
 };
 
 export default App;
